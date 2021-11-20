@@ -1,0 +1,271 @@
+body {
+  background-color: #201f1f;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+.navbar-cont {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-cont {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-cont > h3 {
+  font-family: 'SF Pro Rounded', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.logo-cont > img {
+  width: 15%;
+}
+
+.navbar-links-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-links-cont > a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.hamburger-cont {
+  display: none;
+}
+
+/*************** Navbar Ended ***************/
+
+.body-part-cont {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-side-cont {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.headings-wrapper > h1 {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  line-height: 78px;
+}
+
+.headings-wrapper > h2 {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  line-height: 78px;
+}
+
+.text-wrapper {
+  flex-basis: 25%;
+}
+
+.text-wrapper > p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  opacity: 0.55;
+}
+
+button {
+  background-color: #3B5CFF;
+  width: 130px;
+  height: 41px;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.right-side-cont {
+  width: 40%;
+}
+
+.discover-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-cont > p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  opacity: 0.74;
+}
+
+.discover-cont > img {
+  width: 30px;
+  height: 40px;
+}
+
+
+/*************** Body Part Ended ***************/
+
+.navbar-links-cont > a:hover,
+.logo-cont > h3:hover,
+.discover-cont > img:hover,
+.hamburger-cont > img:hover,
+.discover-cont > p:hover {
+  color: red;
+  opacity: 0.7;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.headings-wrapper > h1, 
+.headings-wrapper > h2, 
+.text-wrapper > p,
+button,
+.discover-cont > p,
+.logo-cont > h3, 
+.navbar-links-cont > a {
+  color: #FFFFFF;
+}
+
+/*************** Media Queries ***************/
+
+@media (min-width: 1700px) {
+  .navbar-links-cont {
+    width: 30%;
+  }
+
+/*************** Navbar Ended ***************/
+
+  .headings-wrapper > h1 {
+    font-weight: 300;
+    font-size: 68px;
+  }
+
+  .headings-wrapper > h2 {
+    font-weight: 700;
+    font-size: 68px;
+  }
+
+  .text-wrapper {
+    width: 60%;
+  }
+
+  .text-wrapper > p {
+    font-weight: 400;
+    font-size: 21px;
+  }
+}
+
+
+
+@media (min-width: 850px) and (max-width: 1699px) {  
+  .navbar-links-cont {
+    width: 60%;
+  }
+
+/*************** Navbar Ended ***************/
+
+  .headings-wrapper > h1 {
+    font-weight: 300;
+    font-size: 48px;
+  }
+
+  .headings-wrapper > h2 {
+    font-weight: 600;
+    font-size: 48px;
+  }
+
+  .text-wrapper {
+    width: 100%;
+  }
+
+  .text-wrapper > p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+
+
+@media (min-width: 450px) and (max-width: 849px) {
+  .navbar-links-cont {
+    display: none;
+  }
+
+  .hamburger-cont {
+    display: flex;
+    align-items: center;
+  }
+
+/*************** Navbar Ended ***************/
+
+  .body-part-cont {
+    flex-wrap: wrap;
+  }
+
+  .left-side-cont {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-side-cont {
+    width: 60%;
+    margin-top: 5%;
+  }
+
+  .headings-wrapper > h1 {
+    font-weight: 300;
+    font-size: 48px;
+  }
+
+  .headings-wrapper > h2 {
+    font-weight: 600;
+    font-size: 48px;
+  }
+
+  .text-wrapper {
+    width: 100%;
+  }
+
+  .text-wrapper > p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .discover-cont {
+    margin: 0;
+  }
+}
